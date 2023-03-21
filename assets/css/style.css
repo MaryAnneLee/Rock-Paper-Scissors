@@ -43,3 +43,12 @@ h3 {
 .score {
     margin-left: 1rem;
 }
+
+.result {
+    transform: scale(0.5, 0.5)
+    
+}
+
+.result.winner {
+    transform: scale(1.3);
+}

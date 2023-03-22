@@ -1,9 +1,10 @@
-const choiceImgs = document.querySelectorAll('[data-selection]')
+// code from Web dev Simplified as specified in ReadMe 
 
-const CHOICES = [
+// Select who the winner is from all the possible selections
+const SELECTIONS = [
     {
         name: 'rock',
-        img: 'rock.png',
+        img: 'rock',
         beats: 'scissors'
     },
     {
@@ -15,17 +16,27 @@ const CHOICES = [
         name: 'scissors',
         img: 'scissors.png',
         beats: 'paper'
-    }
+    },
 ]
 
-choiceImgs.forEach(choiceImg => {
-    choiceImg.addEventListener('click', e => {
-        const choiceName = choiceImg.dataset.selection
-        const choice = CHOICES.find(choice => choice.name === choiceName)
-        makeChoice(choiceName)
+
+/* Selections on img-buttons with data-selections for rock, paper, scissors.
+EventListner for clicking the button. Looping through the sections to find 
+the selections that has the same names
+*/
+const selectionButtons = document.querySelectorAll('[data-selection]');
+
+selectionButtons.forEach(selectionButton => {
+    selectionButton.addEventListener('click', e => {
+        const selectionName = selectionButton.dataset.selecetion
+        const selection = SELECTIONS.find(selection => selection.name === selection.Name)
+        makeSelection(selectionName)
     })
 })
 
-function makeChoice(choice) {
-    console.log(choice)
+function makeSelection(selection) {
+
+console.log(selection)
 }
+
+

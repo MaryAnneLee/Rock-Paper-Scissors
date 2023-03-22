@@ -172,7 +172,8 @@ To clone the Rock Paper Scissors repository:
 
 ### Solved bugs
 
-1.  
+1.  Did not get the JavaScript to work so that it utförde uppgiften to show what beats what. 
+Solution: Started over from the beginning and changed tha class names as in the tutorial instead of the ones I made when putting together html and css. Think al the diffrent names had me confused. 
 
 
 ## Credits

@@ -1,3 +1,5 @@
+//Code from "What's dev" as specified in ReadMe
+
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
@@ -21,26 +23,32 @@ function convertToWord(letter) {
 }
 
 
-// DEFINING OF FUNCTIONS
+// FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW
 function win(userChoice, computerChoice) {
+    const userChoice_div = document.getElementById(userChoice);
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win!`;
+    userChoice_div.classList.add('result-winner');
+    setTimeout(() => userChoice_div.classList.remove('result-winner'), 2000);
 }
 
 function lose(userChoice, computerChoice) {
+    const userChoice_div = document.getElementById(userChoice);
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lost!`;
+    userChoice_div.classList.add('result-loser');
+    setTimeout(() => userChoice_div.classList.remove('result-loser'), 2000);
 }
 
 function draw(userChoice, computerChoice) {
     result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a draw!`; 
 }
 
-//RUNNING THE FUNCTION
+//RUNNING THE FUNCTIONS
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -62,7 +70,7 @@ function game(userChoice) {
     }
 }
 
-
+// CLICKING THE BUTTONS
 function main() {
 rock_div.addEventListener('click', function() {
     game("r");

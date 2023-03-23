@@ -15,20 +15,30 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <h3>Make your move!</h3>
-    <div class="selections">
-        <img class="selection" data-selection="rock" src="assets/images/rock.png">
-        <img class="selection" data-selection="paper" src="assets/images/paper.png">
-        <img class="selection" data-selection="scissors" src="assets/images/scissors.png">
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="assets/images/rock.png" alt="hand like a rock">
+        </div>
+        <div class="choice" id="p">
+            <img src="assets/images/paper.png" alt="hand like a paperbag">
+        </div>
+        <div class="choice" id="s">
+            <img src="assets/images/scissors.png" alt="hand like scissors">
+        </div>
     </div>
-    <div class="results">
+
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="score-board">
         <div class="score-text">
-            You<span class="result-score">0</span>
+            You<span id="user-score">0</span>
         </div>
         <div class="score-text">
-            Computer<span class="result-score">0</span>
+            Computer<span id="computer-score">0</span>
         </div>
-        <!--<div class="result-selcetion winner"><img src="assets/images/rock.png"></div>
-        <div class="result-selection"><img src="assets/images/scissors.png"></div> -->
     </div>
 
    <script src="assets/js/script.js"></script> 

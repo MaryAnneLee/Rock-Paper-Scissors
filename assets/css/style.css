@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f7f0e6;
+}
+
 h1 {
     font-family: 'Bungee', cursive;
     font-size: 300%;
@@ -11,22 +22,22 @@ h3 {
     text-align: center;
 }
 
-.selections {
+.choices {
     display: flex;
     justify-content: center;
 }
 
 /* Code from Web Dev simplified as specified in ReadMe*/
-.selection {
+.choice {
     cursor: pointer;
     transition: 100ms;
 }
 
-.selection:hover {
+.choice:hover {
     transform: scale(1.3);
 }
 
-.results {
+.score-board {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
@@ -40,10 +51,15 @@ h3 {
     color: #49372F; 
 }
 
-.result-score {
+#user-score {
     margin-left: 1rem;
 }
 
+#computer-score {
+    margin-left: 1rem;
+}
+
+/* from WDS
 .result-selection {
     transform: scale(0.5, 0.5)
     
@@ -51,4 +67,4 @@ h3 {
 
 .result-selecetion.winner {
     transform: scale(1.3);
-}
+}*/

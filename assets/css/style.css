@@ -47,7 +47,7 @@ h3 {
     color: #49372F;
 }
 
-.result > p {
+.result>p {
     text-align: center;
 }
 
@@ -62,7 +62,7 @@ h3 {
 }
 
 .score-text {
-    color: #49372F; 
+    color: #49372F;
 }
 
 #user-score {
@@ -75,7 +75,6 @@ h3 {
 
 .result-loser {
     transform: scale(0.5, 0.5)
-    
 }
 
 .result-winner {

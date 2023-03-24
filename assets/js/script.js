@@ -1,29 +1,28 @@
 //Code from "What's dev" as specified in ReadMe
-
+// Varibles for DOM elements
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
-const scoreboard_div = document.querySelector(".score-board");
 const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
+//GETS RANDOM COMPUTER CHOICE
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-// CONVERT LETTER TO WORD
+
 function convertToWord(letter) {
     if (letter === "r") return "Rock";
     if (letter === "p") return "Paper";
     return "Scissors";
 }
 
-
-// FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW
+// FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW, AND INCREMENT SCORE TO THE WINNER
 function win(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
     userScore++;
@@ -48,7 +47,7 @@ function draw(userChoice, computerChoice) {
     result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a draw!`; 
 }
 
-//RUNNING THE FUNCTIONS
+//COMPARES ALL COMBINATIONS OF THE GAME AND WHAT THE RESULT IS 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -70,19 +69,19 @@ function game(userChoice) {
     }
 }
 
-// CLICKING THE BUTTONS
+// EVENTS WHEN CLICKING THE BUTTONS
 function main() {
 rock_div.addEventListener('click', function() {
     game("r");
-})
+});
 
 paper_div.addEventListener('click', function() {
     game("p");
-})
+});
 
 scissors_div.addEventListener('click', function() {
     game("s");
-})
+});
 }
 
 main();

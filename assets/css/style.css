@@ -80,3 +80,26 @@ h3 {
 .result-winner {
     transform: scale(1.5);
 }
+
+/* Media queries*/
+
+@media screen and (max-width: 620px) {
+    h1 {
+        font-size: 200%;
+    }
+    }
+
+@media screen and (max-width: 560px) {
+        h1 {
+            font-size: 200%;
+        }
+        .result {
+            font-size: 100%;
+        }   
+        .choice {
+            max-width: 33%;
+            height: auto;
+        }
+    }   
+
+    

@@ -1,11 +1,10 @@
 # Rock Paper Scissors
 
-Rock Paper Scissors is a game
+Rock Paper Scissors, a game created for the Project Portfolio 2 at Code Institute.
 
-![responsive game]()
+![Rock Paper Scissors game](assets/images/readme/rps-responsive.png)
 
 [View Rock Paper Scissirs on Github pages](https://github.com/MaryAnneLee/rock-paper-scissors)
-
 
 
 ---
@@ -22,7 +21,6 @@ Rock Paper Scissors is a game
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -48,12 +46,16 @@ Rock Paper Scissors is a game
 
 ## User experience (UX)
 
-Rock Paper Scissors is a game to play for fun, or to use for making decisions.  
+Rock Paper Scissors is a game to play for fun, or to use for making decisions. 
 
 ### User stories
+A simple and fun game to play.
+Easy to understand the structure of the webpage. 
+Easy to see the scoreboard and the result of each move. 
 
 #### User goals
-Make visitors play a fun game.
+To play a fun game.
+To  play a game that is easy to navigate and understand.
 
 
 ## Design
@@ -62,7 +64,7 @@ I aimed for a clean design with earthy colors.
 
 ### Colour Scheme
 
-![color scheme](.png)
+![color scheme](assets/images/readme/rps-color-palette.png)
 
 The color palette was created using [Colorminds](http://colormind.io/)
 
@@ -75,29 +77,33 @@ I went for Bungee cause it fits in well with the colors and look I wanted.
 
 ### Imagery
 
-I created the icons with the colors in [Canva](https://www.canva.com/).
+I add colors to the button icons in [Canva](https://www.canva.com/).
 
 ### Wireframes
 
-For this simple wireframe I used [mockflow.com](https://wwww.mockflow.com)
+For this simple wireframe I used pen and paper.
 
-![Wireframe](.jpg)
+![Wireframe](assets/images/readme/rps-wireframe.jpg)
 
 
 ## Features
 
-Rock Paper Scissors is a game with only one page. 
+Rock Paper Scissors is a game with only one page divided in three sections.
 
-### Main page 
-![Main page](.jpg)
+* Header with the title of the game. Background color blends in well with the rest of the page. 
+![Header](assets/images/readme/rps-header.png)
 
-The main page consists of the game with three icons to choose from, and a part that shows the visitor and the computers choices, and the results. 
+* Game area with a heading and three icons to choose from when playing the game. 
+![Game area](assets/images/readme/rps-game-area.png)
+
+* Score area that keeps score and also provides a message if the user wins. loses or if it's a draw.
+![Score area](assets/images/readme/rps-score-area.png)
 
 
 ### Future Implementations
 
-- 
--  
+- To set a break for best out of five.
+- To be able to start over without having to refresh the browser. 
 
 ### Accessibility
 
@@ -121,10 +127,10 @@ For the accessibility this was used:
 - Gitpod
 - Google Fonts 
 - Google Dev Tools 
-- Mockflow
 - Canva
 - Am I Responsive? 
 - Gimp
+- w3 schools
 
 
 ## Deployment & Local Development
@@ -164,25 +170,36 @@ To clone the Rock Paper Scissors repository:
 
 - Chrome developer tools was used to find any issues while building the webpage. 
 
-- The W3C validators for HTML and CSS was used when the webpage was finsihed. (No errors on CSS and a few errors on HTML-pages but this was solved. See details below on Solved bugs.)
+- The W3C validators for HTML and CSS was used when the webpage was finsihed. JSHint was used for JavaScript. 
+![HTML validation](assets/images/readme/rps-html-validation.png)
+![CSS validation](assets/images/readme/rps-css-validation.png)
+![](assets/images/readme/rps-jshint.png)
+
 
 - Lighthouse testing
 
-![Lighthouse testing](.png)
+![Lighthouse testing](assets/images/readme/rps-lighthouse.png)
 
 ### Solved bugs
 
 1.  Did not get the JavaScript to work so that it did the task to show what beats what. 
-Solution: Started over from the beginning and changed tha class names as in the tutorial instead of the ones I made when putting together html and css. Think al the diffrent names had me confused. But that didn't work either and I couldn't figure out was what wrong because I'd written the code as in the tutorial. So I changed tutorial to a better one and begun again from the beginning with js and chamged some of the html and css.  
+Solution: After trying to get it to work several times I started over from the beginning with JS with a differant tutorial. The second tutorial was much easier to understand and the problem was solved when starting over with new JavaScript. 
+
+2. Image icons didn´t stay in the browser window on smaller screens. 
+Solution: Googled it [javapoint.com](https://www.javatpoint.com/how-to-change-image-size-in-css) had an explanation for it, and I added max-width and height to the images. 
+
+3. An 404 error message appeared on Dev tools, regarding favicon.
+Solution: Searched on Slack and found out that the sultion was to add a favicon, so I did and the error message disappeared. 
 
 
 ## Credits
 
 ### Code Used
 
-- Inspiration and code came from a few diffrent tutorials on YouTube. 
+- Inspiration and code came from two diffrent tutorials on YouTube.
  - [Web Dev simplified - How to code Rock Paper Scissors](https://www.youtube.com/watch?v=1yS-JV4fWqY)
- - []()
+ - [Whatsdev - How to Build a Rock Paper Scissors Game with Html, Css, and Javascript part 1](https://www.youtube.com/watch?v=qipq1BV5myU)
+ - [Whatsdev - How to Build a Rock Paper Scissors Game with Html, Css, and Javascript part 2](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ)
  
 - The wonderful readme template came from [Kera Cudmore](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md)
 
@@ -192,7 +209,7 @@ Written by Anne-Lie Smith.
 
 ###  Media
 
-
+Image icons is from Canva. 
   
 ###  Acknowledgments
 
@@ -200,4 +217,4 @@ A special thanks to peolpe that helped me complete my first portfolio project!
 - Martina Terlevic, my Code institute mentor.
 - Paul Thomas O'Riordan for helping out with questions in our Slack class channel.
 - Kera Cudmore, for all the information about the Readme-file.
-- My fellow class mates Johan, Mark and Thomas.  
+- My fellow class mates Johan, Mark and Thomas.   
